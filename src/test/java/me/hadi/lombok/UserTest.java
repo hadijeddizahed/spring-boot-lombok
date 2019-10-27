@@ -14,11 +14,8 @@ public class UserTest {
     @Test
     public void createUser() {
         user = User.builder()
-                .age(30)
-                .firstName("Ali")
-                .gender("M")
-                .id(1000l)
-                .lastName("Daie")
+                .name("Ali")
+                .email("Ali@gmail.com")
                 .build();
         Assertions.assertNotNull(user,"Build user object successfully!");
     }

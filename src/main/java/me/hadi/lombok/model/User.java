@@ -1,14 +1,19 @@
 package me.hadi.lombok.model;
 
 import lombok.Builder;
-import lombok.ToString;
+import lombok.Value;
 
-@Builder
-@ToString
+@Value
 public class User {
-    private long id;
-    private String firstName;
-    private String lastName;
-    private int age;
-    private String gender;
+
+     String username;
+     String name;
+
+    @Builder(toBuilder = true)
+    User(String name,String email){
+        this.username = email;
+        this.name = name;
+    }
+
+
 }
