@@ -6,7 +6,10 @@ import java.io.Serializable;
 
 @Data
 @AllArgsConstructor
+<<<<<<< Updated upstream
 @NoArgsConstructor
+=======
+>>>>>>> Stashed changes
 public class Person implements Serializable {
 
     private Long id;
